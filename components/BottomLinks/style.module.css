@@ -1,0 +1,89 @@
+.bottomLinksDiv {
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 26px 0;
+    z-index: 9;
+}
+.bottomLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottomLinks ul li {
+    display: inline-block;
+}
+.bottomLinks ul li + li {
+    margin-left: 65px;
+    padding-left: 65px;
+    border-left: 1px solid #1b1652;
+}
+.bottomLinks ul li a {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+.bottomLinks ul li a i {
+    height: 32px;
+}
+.colorIcon {
+    display: inline-block;
+}
+.whiteIcon {
+    display: none;
+}
+.bottomLinks ul li a span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: all 0.3s ease 0s;
+}
+.bottomLinks ul li a:hover .colorIcon {
+    display: none;
+}
+.bottomLinks ul li a:hover .whiteIcon {
+    display: inline-block;
+}
+.bottomLinks ul li a:hover span {
+    color: #ffc21c;
+}
+.bottomLinks ul li:first-child a:hover span {
+    color: #10ebe5;
+}
+.bottomLinks ul li:last-child a:hover span {
+    color: #107deb;
+}
+
+/*
+  ======== Responsive Design ========
+*/
+
+
+/* Tab */
+@media (max-width:991px) {
+    .bottomLinks ul li + li {
+        margin-left: 35px;
+        padding-left: 35px;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width:767px) {
+    .bottomLinksDiv {
+        padding: 15px 0;
+        display: none;
+    }
+    .bottomLinks ul li + li {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    .bottomLinks ul li a span {
+        display: none;
+    }
+}

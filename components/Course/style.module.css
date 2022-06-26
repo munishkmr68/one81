@@ -1,0 +1,40 @@
+.courseBlock {
+    position: relative;
+    background: #100941;
+    overflow: hidden;
+}
+.courseImg {
+    margin-left: -450px;
+}
+.courseDscrptn {
+    padding-left: 20px;
+}
+.courseBtns {
+    text-align: right;
+}
+
+
+@media (min-width:1400px) {
+    .courseDscrptn {
+        padding-left: 220px;
+    }
+}
+
+@media (max-width:991px) {
+    .courseDscrptn {
+        margin-top: 60px;
+        padding-left: 0;
+    }
+}
+@media (max-width:767px) {
+    .courseImg {
+        margin-left: -140px;
+        margin-right: -140px;
+    }
+    .courseDscrptn {
+        margin-top: 40px;
+    }
+    .courseDscrptn > div {
+        text-align: left !important;
+    }
+}

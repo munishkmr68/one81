@@ -1,0 +1,166 @@
+/* Navigation Menu */
+.navigation {
+	padding: 30px 15px;
+	max-width: 1690px;
+	margin: 0 auto;
+}
+.menu_container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.menu_container .active a {
+	color: #10EBE5 !important;
+}
+
+.menu_container ul {
+	margin: 0;
+	padding: 0;
+	line-height: 50px;
+}
+
+.menu_container li {
+	display: inline-block;
+	list-style: none;
+}
+
+.menu_container li a {
+	color: #ffffff;
+	padding: 0px 28px;
+	font-size: 16px;
+}
+
+.menu_container li a:hover {
+	color: #10EBE5;
+
+}
+
+.menu_container ul {
+	margin-right: 24px;
+}
+
+.logo {
+	width: 135px;
+	height: 35px;
+	background-image: url(../public/assets/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: center;
+}
+
+.logo a {
+	width: 135px;
+	height: 100%;
+	display: block;
+}
+
+.mobile_menu_button {
+	width: 25px;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+
+.mobile_menu_button span {
+	background: #fff;
+	display: block;
+	height: 2px;
+}
+
+.mobile_menu_button span + span {
+	margin-top: 5px;
+}
+
+.mobile_menuCross_button {
+	width: 20px;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+.mobile_menuCross_button span {
+	background: #fff;
+	display: block;
+	height: 2px;
+}
+.mobile_menuCross_button span:first-child {
+	transform: rotate(135deg);
+}
+.mobile_menuCross_button span:last-child {
+	transform: rotate(-135deg);
+	margin-top: -1.5px;
+}
+
+.mblMenuLinkList {
+	margin-top: 50px;
+}
+.back_button {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #343434;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	-webkit-transition: all 300ms ease-in-out 0s;
+	-o-transition: all 300ms ease-in-out 0s;
+	transition: all 300ms ease-in-out 0s;
+	z-index: 9;
+}
+
+.menu_container .navMenuActiveOutr h4 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.mblMenuLink + .mblMenuLink {
+	margin-top: 15px;
+}
+.mblMenuLink a {
+	color: #fff;
+}
+
+/*
+  ======== Responsive Design ========
+*/
+
+/* Laptop */
+@media (min-width:991px) and (max-width:1349px) {
+	.menu_container li a {
+		padding: 0px 15px;
+	}
+}
+
+/* Tablet */
+@media (max-width:991px) {
+	.menu_container {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+		padding: 0;
+		top: 0;
+		background: rgb(42,36,172);
+		color: #fff;
+		background: linear-gradient(162deg, rgba(42,36,172,1) 0%, rgba(138,28,201,1) 100%);
+		bottom: 0;
+		transition: all 300ms ease-in-out 0s;
+		transform: translateY(-100%);
+		border-top: 1px solid #EDEDED;
+		margin-top: -100px;
+		display: block;
+	}
+
+}
+
+/* Mobile Phone */
+
+@media (max-width:767px) {
+	.navigation {
+		padding: 25px 15px;
+	}
+}

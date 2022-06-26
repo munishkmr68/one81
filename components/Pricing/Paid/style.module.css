@@ -1,0 +1,136 @@
+.paidItem {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+}
+.paidItem h5 {
+    font-size: 27px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.paidItem h6 {
+    font-size: 12px;
+    color: #B736D6;
+    line-height: 16px;
+    padding-top: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.paidPriceCol h3 {
+    font-size: 96px;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+}
+.paidPriceCol h3 small {
+    font-size: 18px;
+    vertical-align: top;
+    position: relative;
+    top: 24px;
+    padding-left: 4px;
+}
+.paidPriceCol p {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin-top: -20px;
+}
+
+.buildAnualy{
+    padding: 17px 0px;
+    margin: 23px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.buildAnualy p {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: #B736D6;
+    text-transform: uppercase;
+}
+
+.buildAnualy p {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: #B736D6;
+    text-transform: uppercase;
+}
+
+.buildAnualy h4 {
+    font-size: 35px;
+}
+
+.buildAnualy h4 sup {
+    padding-left: 10px;
+    padding-right: 8px;
+    font-size: 13px;
+    vertical-align: top;
+    top: 5px;
+    position: relative;
+}
+
+.buildAnualy h4 sub {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.8px;
+    position: relative;
+    top: -3px;
+    text-transform: uppercase;
+}
+.PaidPriceContent p {
+    line-height: 19px;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 170px;
+    margin: 0 auto;
+    
+}
+.PaidPriceContent p span {
+    text-transform: initial;
+}
+
+.PaidPriceContent{
+    padding-bottom: 28px;
+}
+.cancelTitle {
+    font-size: 9px;
+    letter-spacing: 1.8px;
+    line-height: 15px;
+    padding-top: 27px;
+    text-decoration: underline;
+    text-transform: uppercase
+
+}
+
+
+/*
+  ======== Responsive Design ========
+*/
+
+/* Mini Laptop */
+@media (max-width:1199px) {
+    .paidPriceCol h3 {
+        font-size: 66px;
+    }
+}
+
+/* Tab */
+@media (max-width:991px) {
+    
+}
+
+
+/* Mobile Phone */
+@media (max-width:767px) {
+    .paidPriceCol p {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,88 @@
+.journeyBlk {
+    background: #100941;
+    padding-top: 67px;
+	position: relative;
+}
+/* Journey Tabs */
+.tabCol {
+	overflow: hidden;
+}
+.tabCol .nav-item {
+	display: none;
+}
+.tabsBottom {
+	margin-top: 84px;
+	border-top: 1px solid #271b79;
+}
+.tabsBottom h4 {
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+	font-weight: 300;
+	line-height: 80px;
+}
+.tabsBottom h4 a {
+	color: #fff;
+}
+.stdyIcon {
+    background-image: url('../public/assets/studyIcon.png');
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/*
+  ======== Responsive Design ========
+*/
+
+@media (min-width: 1400px) {
+	.tabsBottom h4 {
+		font-size: 21px;
+		line-height: 110px;
+	}
+	.stdyIcon {
+		width: 32px;
+		line-height: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 767px) {
+	.tabsBottom {
+		border: 0;
+	}
+	.tabsBottom > div > div > div:first-child h4 {
+		line-height: normal;
+		position: absolute;
+		left: 20px;
+		top: 138px;
+		right: 20px;
+		z-index: 9;
+		text-align: center;
+	}
+	.tabsBottom > div > div > div:last-child h4 {
+		line-height: normal;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 9;
+	}
+	.journeyBlk {
+		padding-top: 0;
+	}
+	.tabCol::before {
+		background: #201850;
+		position: absolute;
+		content: "";
+		left: -80px;
+		top: 0;
+		right: 0;
+		height: 62px;
+		z-index: 1;
+	}
+}

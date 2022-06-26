@@ -1,0 +1,63 @@
+.heading {
+    margin-bottom: 90px;
+}
+.heading h4 {
+	color: #000;
+    font-size: 62px;
+    line-height: 70px;
+    position: relative;
+    display: block;
+    margin: 0;
+}
+.heading h4 span {
+    color: #8955E8;
+}
+.heading p {
+	font-size: 16px;
+    line-height: 26px;
+    color: #4A4A4A;
+  	max-width: 650px;
+    margin: 20px auto 0 auto;
+}
+
+/*
+  ======== Responsive Design ========
+*/
+
+/* Desktop */
+@media (min-width:1200px) {
+    .heading h4 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* Mini Laptop */
+@media (max-width:1199px) {
+    .heading {
+        margin-bottom: 50px;
+    }
+    .heading h4 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+/* Tab */
+@media (max-width:991px) {
+    .heading h4 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width:767px) {
+    .heading {
+        margin-bottom: 40px;
+    }
+    .heading p {
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+    }
+}

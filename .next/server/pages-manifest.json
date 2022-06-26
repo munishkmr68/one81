@@ -1,0 +1,20 @@
+{
+  "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/blog-detail": "pages/blog-detail.js",
+  "/blog": "pages/blog.js",
+  "/buy-instagram-followers": "pages/buy-instagram-followers.js",
+  "/buy-instagram-likes": "pages/buy-instagram-likes.js",
+  "/buy-instagram-views": "pages/buy-instagram-views.js",
+  "/checkout": "pages/checkout.js",
+  "/contact": "pages/contact.js",
+  "/enter-details": "pages/enter-details.js",
+  "/faq": "pages/faq.js",
+  "/": "pages/index.js",
+  "/order-status": "pages/order-status.js",
+  "/select-posts": "pages/select-posts.js",
+  "/term-services": "pages/term-services.js",
+  "/thank-you": "pages/thank-you.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+}

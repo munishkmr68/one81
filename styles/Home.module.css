@@ -1,0 +1,119 @@
+/* Home Banner */
+.banner {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 65px;
+	background: rgb(255, 255, 255);
+	background-image: url(../public/assets/hero-banner.jpg);
+	z-index: 99;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.banner_image {
+	width: 100%;
+	float: right;
+}
+
+/* Banner floting circles */
+.banner::before {
+	position: absolute;
+	content: "";
+	background-image: url(../public/assets/circle.svg);
+	height: 409px;
+	width: 409px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: -250px;
+	top: 65px;
+	filter: blur(8px);
+	z-index: -1;
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+
+.banner::after {
+	position: absolute;
+	content: "";
+	background-image: url(../public/assets/circle.svg);
+	height: 435px;
+	width: 435px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	right: -250px;
+	bottom: 45px;
+	filter: blur(14px);
+	background-position: right;
+	z-index: -1;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+/* Animate */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* Text Formatting */
+.banner_buttons {
+	margin-top: 48px;
+}
+
+.banner_buttons a {
+	margin-bottom: 0;
+}
+
+/*
+  ======== Responsive Design ========
+*/
+
+/* Tablet Desktop */
+@media only screen and (min-width: 768px) {
+	.image {
+		text-align: right;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.banner_outer {
+		padding-top: 40px;
+	}
+}
+
+/* Mobile Phone */
+@media only screen and (max-width: 767px) {
+	.banner {
+		padding-bottom: 40px;
+	}
+	.banner::before,
+	.banner::after {
+		display: none;
+	}
+	.banner_content,
+	.image {
+		margin-top: 27px;
+		padding: 0px 30px;
+	}
+	.image {
+		margin-bottom: 40px;
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px 35px;
+	}
+	.banner_buttons > div,
+	.banner_buttons > div a {
+		display: block !important;
+	}
+}

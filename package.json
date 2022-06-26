@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002",
+    "dev": "next dev -p 3000",
     "devwin": "node_modules\\.bin\\next.cmd dev -p 3005",
     "build": "next build && next export",
-    "start": "next start -p 3002",
+    "start": "next start -p 3000",
     "lint": "next lint"
   },
   "dependencies": {
